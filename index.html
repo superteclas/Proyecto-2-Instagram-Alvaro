@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/3b867c5dc1.js" crossorigin="anonymous"></script>
+    <title>Proyecto 2</title>
+</head>
+<body>
+<!-- BARRA NAVEGACION INICIO -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          </ul>
+          <form class="d-flex" role="search">
+<!-- BARRA NAVEGACION FIN -->
+            
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Create a new post
+</button>
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Caption :</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Add the caption of your post here"></textarea>
+        </div>
+        <div class="iconosarea">
+          <a class="btn btn-light" role="button" aria="true"><i class="fa-solid fa-camera"></i></a>
+          <a class="btn btn-light" role="button" aria="true"><i class="fa-solid fa-location-dot"></i></a>
+          
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary mr-3" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Publish</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal end -->
+
+<!-- Boton Derecha inicio -->
+            <div class="btn-group">
+              <button type="button" class="btn btn-secondary dropdown-toggle mx-2" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-gear"></i>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+              </ul>
+            </div>
+        
+            
+          </form>
+        </div>
+      </div>
+    </nav>
+<!-- Boton Derecha fin -->    
+
+
+<!-- BARRA NAVEGACION FINAL -->
+
+<!-- INICIO PARTE INFERIOR -->
+
+
+<ul class="nav nav-tabs mb-2 d-flex justify-content-center" id="myTab" role="tablist">
+
+<li class="nav-item" role="presentation">
+  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+</li>
+
+<li class="nav-item" role="presentation">
+  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+</li>
+
+</ul>
+
+<div class="tab-content" id="myTabContent">
+  <!-- GRID INI -->
+<div class="tab-pane fade show active my-1" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+  <div class="row row-cols-3">
+    <div class="col m-0 p-1">
+      <img src="https://images.unsplash.com/photo-1706361635623-6606c945503e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cafe" class="img-fluid w-100">
+    </div>
+    <div class="col m-0 p-1">
+      <img src="https://images.unsplash.com/photo-1706059923909-ea4477a964c8?q=80&w=1588&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Escaleras" class="img-fluid w-100">
+    </div>
+    <div class="col m-0 p-1">
+      <img src="https://images.unsplash.com/photo-1682687980961-78fa83781450?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Desierto" class="img-fluid w-100">
+    </div>
+    <div class="col m-0 p-1">
+      <img src="https://plus.unsplash.com/premium_photo-1704477658138-e230c1c74eff?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Calendario" class="img-fluid w-100">
+    </div>
+    <div class="col m-0 p-1">
+      <img src="https://images.unsplash.com/photo-1705787333828-1b1dd2b851ac?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Abstracto" class="img-fluid w-100">
+    </div>
+    <div class="col m-0 p-1">
+      <img src="https://plus.unsplash.com/premium_photo-1666256629471-32b4eedd9638?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4Mnx8fGVufDB8fHx8fA%3D%3D" alt="Playa" class="img-fluid w-100">
+    </div>
+    <div class="col m-0 p-1">
+      <img src="https://images.unsplash.com/photo-1700224673906-36185dafec8a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Puerta" class="img-fluid w-100">
+    </div>
+    <div class="col m-0 p-1">
+      <img src="https://images.unsplash.com/photo-1705773335857-2c0a243a604a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Neon" class="img-fluid w-100">
+    </div>
+    <div class="col m-0 p-1">
+      <img src="https://images.unsplash.com/photo-1706059926588-23a0758e8f1f?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Canal" class="img-fluid w-100">
+    </div>
+    <div class="col m-0 p-1">
+      <img src="https://images.unsplash.com/photo-1706059925609-a7be794240a3?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Fotografo" class="img-fluid w-100">
+    </div>
+    <div class="col m-0 p-1">
+      <img src="https://images.unsplash.com/photo-1705943639982-4771862a4a63?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Montaña" class="img-fluid w-100">
+    </div>
+    <div class="col m-0 p-1">
+      <img src="https://images.unsplash.com/photo-1705694617225-c5fcfcd0ac07?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Nueva York" class="img-fluid w-100">
+    </div>
+  </div>
+</div>
+   <!-- GRID FIN -->
+   <!-- POST INI -->
+  <div class="tab-pane fade my-1 " id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+    
+    <div class="card mx-auto mb-4 w-100" style="max-width: 35rem;max-height: 30rem;">
+      <div class="card-header d-flex justify-content-between">
+        <h4 class="card-text">Hoy toca cafe</h4>  <p>11/10</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1706361635623-6606c945503e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cafe" class="img-fluid" style="object-fit: cover; height: 100%;">
+      <div class="card-body">
+        <p><strong>234 likes</strong></p>
+        <p class="card-text">This is an example of a very good photo that you can post on
+          instagram</p>
+      </div>
+    </div>
+    
+    <div class="card mx-auto mb-4 w-100" style="max-width: 35rem;max-height: 30rem;">
+      <div class="card-header d-flex justify-content-between">
+        <h4 class="card-text">Subiendo y bajando escaleras</h4>  <p>14/10</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1706059923909-ea4477a964c8?q=80&w=1588&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Escaleras" class="img-fluid" style="object-fit: cover; height: 100%;">
+      <div class="card-body">
+        <p><strong>567 likes</strong></p>
+        <p class="card-text">This is an example of a very good photo that you can post on
+          instagram</p>
+      </div>
+    </div>
+
+    <div class="card mx-auto mb-4 w-100" style="max-width: 35rem;max-height: 30rem;">
+      <div class="card-header d-flex justify-content-between">
+        <h4 class="card-text">Dia en el desierto</h4>  <p>23/12</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1682687980961-78fa83781450?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Desierto" class="img-fluid" style="object-fit: cover; height: 100%;">
+      <div class="card-body">
+        <p><strong>456 likes</strong></p>
+        <p class="card-text">This is an example of a very good photo that you can post on
+          instagram</p>
+      </div>
+    </div>
+
+    <div class="card mx-auto mb-4 w-100" style="max-width: 35rem;max-height: 30rem;">
+      <div class="card-header d-flex justify-content-between">
+        <h4 class="card-text">Otro mes que pasa</h4>  <p>11/02</p>
+      </div>
+      <img src="https://plus.unsplash.com/premium_photo-1704477658138-e230c1c74eff?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Calendario" class="img-fluid" style="object-fit: cover; height: 100%;">
+      <div class="card-body">
+        <p><strong>567 likes</strong></p>
+        <p class="card-text">This is an example of a very good photo that you can post on
+          instagram</p>
+      </div>
+    </div>
+
+    <div class="card mx-auto mb-4 w-100" style="max-width: 35rem;max-height: 30rem;">
+      <div class="card-header d-flex justify-content-between">
+        <h4 class="card-text">Luces abstractas</h4>  <p>11/03</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1705787333828-1b1dd2b851ac?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Abstracto" class="img-fluid" style="object-fit: cover; height: 100%;">
+      <div class="card-body">
+        <p><strong>660 likes</strong></p>
+        <p class="card-text">This is an example of a very good photo that you can post on
+          instagram</p>
+      </div>
+    </div>
+
+    <div class="card mx-auto mb-4 w-100" style="max-width: 35rem;max-height: 30rem;">
+      <div class="card-header d-flex justify-content-between">
+        <h4 class="card-text">Relax en en mar</h4>  <p>21/04</p>
+      </div>
+      <img src="https://plus.unsplash.com/premium_photo-1666256629471-32b4eedd9638?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4Mnx8fGVufDB8fHx8fA%3D%3D" alt="Playa" class="img-fluid" style="object-fit: cover; height: 100%;">
+      <div class="card-body">
+        <p><strong>434 likes</strong></p>
+        <p class="card-text">This is an example of a very good photo that you can post on
+          instagram</p>
+      </div>
+    </div>
+
+    <div class="card mx-auto mb-4 w-100" style="max-width: 35rem;max-height: 30rem;">
+      <div class="card-header d-flex justify-content-between">
+        <h4 class="card-text">Home sweet home</h4>  <p>15/05</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1700224673906-36185dafec8a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Puerta" class="img-fluid" style="object-fit: cover; height: 100%;">
+      <div class="card-body">
+        <p><strong>234 likes</strong></p>
+        <p class="card-text">This is an example of a very good photo that you can post on
+          instagram</p>
+      </div>
+    </div>
+
+    <div class="card mx-auto mb-4 w-100" style="max-width: 35rem;max-height: 30rem;">
+      <div class="card-header d-flex justify-content-between">
+        <h4 class="card-text">Luces de neón</h4>  <p>23/06</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1705773335857-2c0a243a604a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Neon" class="img-fluid" style="object-fit: cover; height: 100%;">
+      <div class="card-body">
+        <p><strong>467 likes</strong></p>
+        <p class="card-text">This is an example of a very good photo that you can post on
+          instagram</p>
+      </div>
+    </div>
+
+    <div class="card mx-auto mb-4 w-100" style="max-width: 35rem;max-height: 30rem;">
+      <div class="card-header d-flex justify-content-between">
+        <h4 class="card-text">Canales en Amsterdam</h4>  <p>03/07</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1706059926588-23a0758e8f1f?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Canal" class="img-fluid" style="object-fit: cover; height: 100%;">
+      <div class="card-body">
+        <p><strong>678 likes</strong></p>
+        <p class="card-text">This is an example of a very good photo that you can post on
+          instagram</p>
+      </div>
+    </div>
+
+    <div class="card mx-auto mb-4 w-100" style="max-width: 35rem;max-height: 30rem;">
+      <div class="card-header d-flex justify-content-between">
+        <h4 class="card-text">Fotógrafo de vocación</h4>  <p>11/08</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1706059925609-a7be794240a3?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Fotografo" class="img-fluid" style="object-fit: cover; height: 100%;">
+      <div class="card-body">
+        <p><strong>800 likes</strong></p>
+        <p class="card-text">This is an example of a very good photo that you can post on
+          instagram</p>
+      </div>
+    </div>
+
+
+    <div class="card mx-auto mb-4 w-100" style="max-width: 35rem;max-height: 30rem;">
+      <div class="card-header d-flex justify-content-between">
+        <h4 class="card-text">Naturaleza</h4>  <p>11/11</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1705943639982-4771862a4a63?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Montaña" class="img-fluid" style="object-fit: cover; height: 100%;">
+      <div class="card-body">
+        <p><strong>789 likes</strong></p>
+        <p class="card-text">This is an example of a very good photo that you can post on
+          instagram</p>
+      </div>
+    </div>
+
+    <div class="card mx-auto mb-4 w-100" style="max-width: 35rem;max-height: 30rem;">
+      <div class="card-header d-flex justify-content-between">
+        <h4 class="card-text">Viaje a Nueva York</h4>  <p>11/12</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1705694617225-c5fcfcd0ac07?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Nueva York" class="img-fluid" style="object-fit: cover; height: 100%;">
+      <div class="card-body">
+        <p><strong>956 likes</strong></p>
+        <p class="card-text">This is an example of a very good photo that you can post on
+          instagram</p>
+      </div>
+    </div>
+
+    </div>
+  </div>
+  <!-- POST FIN -->
+</div>
+
+<!-- FIN PARTE INFERIOR -->
+
+<!-- SCRIPT -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<!-- SCRIPT -->  
+</body>
+</html>

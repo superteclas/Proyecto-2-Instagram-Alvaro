@@ -1,0 +1,51 @@
+body {
+    margin: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+  
+  .dropdown-menu[data-bs-popper] {
+    
+
+margin-left: -90px;
+    
+  }
+  .mb-2 {
+    margin-bottom: .0rem !important;
+  }
+.nav-tabs {
+    --bs-nav-tabs-border-width: 0;
+    
+}
+.nav-link {
+    
+  color: black;
+}
+.row {
+  
+  margin-top:0;
+  
+}
+
+.my-1 {
+  margin-top: .10rem !important;
+}
+
+.mb-4 {
+
+  margin-top:1.5rem !important; 
+}
+
+.img-fluid {
+  height: fit-content;
+  
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+
+
+
+
